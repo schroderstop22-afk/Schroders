@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salary | Schroders</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 pt-32">
+
+<!-- INCLUDE SAME HEADER HERE -->
+
+<section class="max-w-6xl mx-auto px-6">
+  <h1 class="text-4xl font-bold text-emerald-400 mb-6">
+    Salary & Earnings
+  </h1>
+
+  <p class="text-xl text-slate-300">
+    Monthly income ranges from
+    <span class="text-yellow-400 font-bold">200 – 5,000+ USDT</span>
+  </p>
+</section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schroders</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-black text-slate-100">
+
+<!-- HEADER -->
+<header class="fixed top-0 w-full bg-slate-950/80 backdrop-blur border-b border-slate-800 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <h1 class="text-xl font-bold text-cyan-400" data-i18n="brand">Schroders</h1>
+
+    <div class="flex items-center gap-4">
+
+      <!-- LANGUAGE BUTTON -->
+      <div class="relative">
+        <button id="langBtn"
+          class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700">
+          🌐 Language
+        </button>
+
+        <div id="langMenu"
+          class="hidden absolute right-0 mt-2 w-44 bg-slate-900 rounded-xl border border-slate-700 shadow-xl">
+          <button onclick="setLang('en')" class="lang">English</button>
+          <button onclick="setLang('zh')" class="lang">Chinese</button>
+          <button onclick="setLang('ar')" class="lang">Arabic</button>
+          <button onclick="setLang('hi')" class="lang">Hindi</button>
+          <button onclick="setLang('ko')" class="lang">Korean</button>
+          <button onclick="setLang('ja')" class="lang">Japanese</button>
+          <button onclick="setLang('es')" class="lang">Spanish</button>
+          <button onclick="setLang('fr')" class="lang">French</button>
+        </div>
+      </div>
+
+      <a href="https://sldal.top/#/register" target="_blank"
+        class="px-5 py-2 rounded-xl bg-emerald-500 text-black font-semibold hover:bg-emerald-400"
+        data-i18n="apply">
+        Apply Now
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="pt-40 pb-20 text-center max-w-4xl mx-auto px-6">
+  <h2 class="text-5xl font-extrabold text-cyan-400 mb-6" data-i18n="title">
+    Work From Home
+  </h2>
+
+  <p class="text-lg text-slate-300 mb-8" data-i18n="subtitle">
+    Start working online with flexible hours and stable income.
+  </p>
+
+  <div class="bg-slate-900/70 rounded-2xl p-8 shadow-xl inline-block">
+    <p class="uppercase text-sm text-slate-400" data-i18n="employees">
+      Active Employees
+    </p>
+
+    <h3 class="text-4xl font-extrabold text-emerald-400" id="counter">0</h3>
+
+    <p class="text-slate-400 text-sm" data-i18n="worldwide">
+      Working worldwide
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-6 text-center text-slate-500 text-sm">
+  © 2025 Schroders
+</footer>
+
+<!-- STYLES -->
+<style>
+.lang{
+  width:100%;
+  padding:10px;
+  text-align:left;
+  color:#e5e7eb;
+}
+.lang:hover{background:#1e293b}
+</style>
+
+<!-- SCRIPT -->
+<script>
+// MENU
+const langBtn = document.getElementById("langBtn");
+const langMenu = document.getElementById("langMenu");
+langBtn.onclick = () => langMenu.classList.toggle("hidden");
+document.onclick = e => {
+  if (!langBtn.contains(e.target)) langMenu.classList.add("hidden");
+};
+
+// TRANSLATIONS (100%)
+const t = {
+  en:{
+    brand:"Schroders",
+    title:"Work From Home",
+    subtitle:"Start working online with flexible hours and stable income.",
+    apply:"Apply Now",
+    employees:"Active Employees",
+    worldwide:"Working worldwide"
+  },
+  zh:{
+    brand:"施罗德",
+    title:"在家工作",
+    subtitle:"通过灵活的时间在线工作并获得稳定收入。",
+    apply:"立即申请",
+    employees:"在职员工",
+    worldwide:"全球工作"
+  },
+  ar:{
+    brand:"شرودر",
+    title:"العمل من المنزل",
+    subtitle:"ابدأ العمل عبر الإنترنت بساعات مرنة ودخل ثابت.",
+    apply:"قدّم الآن",
+    employees:"الموظفون النشطون",
+    worldwide:"يعملون حول العالم"
+  },
+  hi:{
+    brand:"श्रोडर्स",
+    title:"घर से काम करें",
+    subtitle:"लचीले समय के साथ ऑनलाइन काम शुरू करें।",
+    apply:"अभी आवेदन करें",
+    employees:"सक्रिय कर्मचारी",
+    worldwide:"दुनिया भर में कार्यरत"
+  },
+  ko:{
+    brand:"슈로더스",
+    title:"재택 근무",
+    subtitle:"유연한 시간으로 온라인 근무를 시작하세요.",
+    apply:"지금 지원",
+    employees:"활동 중인 직원",
+    worldwide:"전 세계 근무"
+  },
+  ja:{
+    brand:"シュローダーズ",
+    title:"在宅勤務",
+    subtitle:"柔軟な時間でオンラインで働きましょう。",
+    apply:"今すぐ応募",
+    employees:"稼働中の従業員",
+    worldwide:"世界中で勤務"
+  },
+  es:{
+    brand:"Schroders",
+    title:"Trabajo desde casa",
+    subtitle:"Empieza a trabajar en línea con horarios flexibles.",
+    apply:"Aplicar ahora",
+    employees:"Empleados activos",
+    worldwide:"Trabajando en todo el mundo"
+  },
+  fr:{
+    brand:"Schroders",
+    title:"Travail à domicile",
+    subtitle:"Commencez à travailler en ligne avec des horaires flexibles.",
+    apply:"Postuler",
+    employees:"Employés actifs",
+    worldwide:"Travail mondial"
+  }
+};
+
+// APPLY LANGUAGE
+function setLang(l){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    el.innerText = t[l][el.dataset.i18n];
+  });
+  localStorage.lang = l;
+}
+
+// LOAD
+setLang(localStorage.lang || "en");
+
+// COUNTER
+let n=0;
+const counter=document.getElementById("counter");
+const i=setInterval(()=>{
+  n+=50;
+  counter.innerText=n.toLocaleString()+"+";
+  if(n>=3130) clearInterval(i);
+},20);
+</script>
+
+</body>
+</html>

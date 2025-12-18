@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply Now | Full-time & Part-time</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="js.ini">
+  <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-black text-slate-100">
+    
+
+<!-- TOP NAVIGATION -->
+<header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+    <div class="text-xl font-bold text-cyan-400 tracking-wide">
+      Schroders
+    </div>
+
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="index.html" class="text-slate-300 hover:text-white">Home</a>
+      <a href="salary.html" class="text-slate-300 hover:text-white">Salary</a>
+      <a href="about.html" class="text-slate-300 hover:text-white">About</a>
+      <a href="https://sldal.top/#/register"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="px-5 py-2 rounded-xl bg-emerald-500 text-black font-semibold hover:bg-emerald-400 transition">
+  Apply Now
+</a>
+
+    </nav>
+ <div class="relative">
+        <button id="langBtn" class="bg-slate-800 px-3 py-2 rounded">
+          🌐 <span id="langText">EN</span>
+        </button>
+
+        <div id="langMenu" class="hidden absolute right-0 mt-2 bg-slate-800 rounded shadow">
+          <button onclick="setLang('en')" class="block px-4 py-2 w-full">English</button>
+          <button onclick="setLang('zh')" class="block px-4 py-2 w-full">中文</button>
+          <button onclick="setLang('ar')" class="block px-4 py-2 w-full">العربية</button>
+          <button onclick="setLang('hi')" class="block px-4 py-2 w-full">हिन्दी</button>
+          <button onclick="setLang('ko')" class="block px-4 py-2 w-full">한국어</button>
+          <button onclick="setLang('ja')" class="block px-4 py-2 w-full">日本語</button>
+          <button onclick="setLang('es')" class="block px-4 py-2 w-full">Español</button>
+          <button onclick="setLang('fr')" class="block px-4 py-2 w-full">Français</button>
+        </div>
+      </div>
+
+  </div>
+</header>
+
+
+</script>
+
+
+
+<!-- HERO SECTION -->
+<section id="home" class="min-h-screen flex items-center pt-32">
+  <div class="max-w-7xl mx-auto px-6 w-full">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div>
+        <img src="image/logo.jpg" alt="Logo" class="w-24 mb-6">
+
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-cyan-400">
+          Schroders
+        </h1>
+
+        <p class="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
+          Start working online on a
+          <span class="text-emerald-400 font-semibold">part-time</span>
+          or
+          <span class="text-sky-400 font-semibold">full-time</span>
+          schedule. Work from home with clear guidance and consistent support.
+        </p>
+
+        <a href="https://sldal.top/#/register"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="px-5 py-2 rounded-xl bg-emerald-500 text-black font-semibold hover:bg-emerald-400 transition">
+  Apply Now
+</a>
+
+        <!-- EMPLOYEE SATISFACTION -->
+<div class="mt-6 bg-slate-900/70 backdrop-blur-md rounded-2xl px-8 py-6 shadow-xl text-center">
+
+  <!-- AVATAR STACK -->
+  <div class="flex justify-center -space-x-2 mb-2">
+    <img src="image/aployer1.jpg"
+         class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+    <img src="image/aployer2.jpg"
+         class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+    <img src="image/aployer3.jpg"
+         class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" />
+  </div>
+
+  <!-- TEXT -->
+   <body>
+    
+   
+  <p class="text-slate-300 text-sm">
+    <span class="text-emerald-400 font-semibold">99%</span>
+    of our current employees are satisfied with their jobs.
+  </p>
+</div>
+</body>
+
+
+
+        <!-- ACTIVE EMPLOYEES -->
+        <div class="mt-10 inline-block bg-slate-900/70 backdrop-blur-md rounded-2xl px-8 py-5 shadow-xl">
+          <p class="text-slate-400 text-sm uppercase tracking-wide">
+            Active Employees
+          </p>
+      <h3 class="text-4xl font-extrabold text-emerald-400">
+  <span id="employeeCounter">0.1</span>+
+</h3>
+<p class="text-slate-400 text-sm">Working worldwide</p>
+
+
+          <p class="text-slate-400 text-sm">
+            Working worldwide
+          </p>
+        </div>
+      </div>
+      <script>
+window.onload = function () {
+  const counter = document.getElementById("employeeCounter");
+
+  let current = 0.1;
+  const target = 3130;
+  const step = 25; // speed
+
+  const interval = setInterval(() => {
+    current += step;
+
+    if (current >= target) {
+      counter.textContent = "3,130";
+      clearInterval(interval);
+    } else {
+      counter.textContent = Math.floor(current).toLocaleString();
+    }
+  }, 20);
+};
+</script>
+
+      
+
+      <!-- RIGHT SIDE STACK -->
+      <div class="space-y-10">
+
+        <!-- TRUST CARD (NO PEOPLE) -->
+        <div class="bg-slate-900/70 backdrop-blur-md rounded-2xl p-10 shadow-xl text-center">
+          <div class="mx-auto mb-6 w-25  
+                      bg-gradient-to-br from-cyan-400 to-emerald-500 
+                      flex items-center justify-center shadow-lg">
+                      
+            
+          </div>
+          <img src="image/people1.png">
+
+          <h3 class="text-xl font-bold text-cyan-300">
+            Remote Opportunities
+          </h3>
+
+          <p class="text-slate-400 mt-2">
+            Secure & structured online roles
+          </p>
+        </div>
+
+        <!-- SALARY BOX -->
+        <div id="salary" class="bg-slate-900/70 backdrop-blur-md rounded-2xl p-8 shadow-xl">
+     <div id="salary" class="bg-slate-900/70 backdrop-blur-md rounded-2xl p-8 shadow-xl animate-float glow-salary">
+        <style>
+            @keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+        </style>
+
+          <h2 class="text-3xl font-bold mb-3">Salary & Earnings</h2>
+
+          <p class="text-slate-300 mb-1">
+            <span class="text-emerald-400 font-semibold">Monthly Income</span>
+          </p>
+
+          <p class="text-3xl font-bold text-yellow-400 mb-3">
+            200 USDT To  5000USDT
+          </p>
+
+          <p class="text-slate-400">
+            Payment available for both Full-time and Part-time positions.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POSITIONS -->
+<section id="positions" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Available Positions</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <div class="rounded-2xl bg-slate-900 p-8 shadow-xl hover:scale-[1.03] transition">
+        <h3 class="text-xl font-semibold mb-4 text-emerald-400">Full-Time Position</h3>
+        <ul class="text-slate-300 space-y-2">
+          <li>✔ Stable monthly income</li>
+          <li>✔ Long-term career growth</li>
+          <li>✔ Training & support</li>
+          <li>✔ Performance bonuses</li>
+        </ul>
+        <a href="#apply"
+           class="mt-8 block text-center px-6 py-3 rounded-xl bg-emerald-500 text-black font-semibold hover:bg-emerald-400">
+          Apply Full-Time
+        </a>
+      </div>
+
+      <div class="rounded-2xl bg-slate-900 p-8 shadow-xl hover:scale-[1.03] transition">
+        <h3 class="text-xl font-semibold mb-4 text-sky-400">Part-Time Position</h3>
+        <ul class="text-slate-300 space-y-2">
+          <li>✔ Flexible hours</li>
+          <li>✔ Remote work</li>
+          <li>✔ Students & freelancers</li>
+          <li>✔ Fast payouts</li>
+        </ul>
+        <a href="#apply"
+           class="mt-8 block text-center px-6 py-3 rounded-xl bg-sky-500 text-black font-semibold hover:bg-sky-400">
+          Apply Part-Time
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- SCROLLING TEXT -->
+<div class="relative overflow-hidden bg-slate-900/70 backdrop-blur-md rounded-2xl py-4 shadow-xl">
+
+  <div class="whitespace-nowrap flex animate-scroll">
+    <span class="mx-12 text-emerald-400 font-semibold text-lg">
+      ✔ Flexible Remote Jobs
+    </span>
+    <span class="mx-12 text-sky-400 font-semibold text-lg">
+      ✔  Monthly Payments
+    </span>
+    <span class="mx-12 text-yellow-400 font-semibold text-lg">
+      ✔ Trusted Worldwide
+    </span>
+    <span class="mx-12 text-cyan-400 font-semibold text-lg">
+      ✔ 99% Employee Satisfaction
+    </span>
+    <span class="mx-12 text-emerald-400 font-semibold text-lg">
+      ✔ Work From Home
+    </span>
+  </div>
+
+</div>
+<style>
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+</style>
+<!-- ABOUT US SECTION -->
+<section id="about" class="py-24 bg-gradient-to-br from-slat900-amber-100">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    <!-- LEFT : GIF / IMAGE -->
+    <div class="relative">
+      <div class="rounded-3xl overflow-hidden shadow-2xl">
+        <img
+          src="image/about.gif"  <!-- replace with your GIF -->
+      </div>
+
+      <!-- floating badge -->
+      <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl px-6 py-4 shadow-xl">
+        <p class="text-sm text-slate-500">Trusted Worldwide</p>
+        <p class="text-2xl font-bold text-emerald-500">99% Satisfaction</p>
+      </div>
+    </div>
+
+    <!-- RIGHT : TEXT -->
+     
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-slate-500b-6">
+        About Us
+      </h2>
+
+      <p class="text-slate-600 text-lg leading-relaxed mb-6">
+        Schroders quantitative investment uses scientific
+         data analysis and automated computer programs to help you achieve
+          stable profits in the market.Based on macroeconomic data and other
+           factors, it ensures stable and continuous returns from the market every
+            day through precise buy and sell orders.
+      </p>
+
+      <p class="text-slate-700 text-lg leading-relaxed mb-8">
+        Every position we offer goes through a careful vetting process
+        to ensure legitimacy, fairness, and alignment with your long-term
+        goals. We strive to make remote hiring simple, honest,
+        and empowering for everyone.
+      </p>
+
+      <a href="https://sldal.top/#/register"
+       target="_blank"
+        rel="noopener noreferrer"
+         class="inline-flex items-center gap-2 px-8 py-4 rounded-2xl
+                bg-indigo-500 text-white font-semibold
+                hover:bg-indigo-600 hover:scale-105 transition">
+        Apply now
+        <span class="text-xl">→</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- JOB INFORMATION SECTION -->
+<section id="jobs" class="py-24 bg-slat900"></section>
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+    <!-- LEFT CONTENT -->
+    <div>
+      <span class="inline-block mb-4 px-4 py-2 rounded-full bg-orange-500 text-white text-sm font-semibold">
+        Job Information
+      </span>
+
+      <h2 class="text-4xl md:text-4xl font-extrabold text-slate-500b-5">
+        Start your career <br class="hidden md:block"> remotely
+      </h2>
+
+      <p class="text-slate-60text-lg leading-relaxed mb-8">
+        Take your first step towards flexible and stable work.
+        We offer a variety of online roles that allow you to gain experience,
+        earn safely, and grow professionally, without location restrictions.
+      </p>
+
+      <!-- CHECK LIST -->
+      <div class="bg-white rounded-2xl p-6 shadow-md mb-8">
+        <ul class="space-y-4 text-slate-700">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-5 h-5 bg-slate-900 text-white rounded-full flex items-center justify-center text-xs">✔</span>
+            Follow clear instructions to manage basic online tasks
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-5 h-5 bg-slate-900 text-white rounded-full flex items-center justify-center text-xs">✔</span>
+            Organize and update digital information
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 w-5 h-5 bg-slate-900 text-white rounded-full flex items-center justify-center text-xs">✔</span>
+            Helping you maintain a smooth online workflow
+          </li>
+        </ul>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="flex items-center gap-4">
+        <div class="flex -space-x-2">
+          <img src="image/aployer1.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+          <img src="image/aployer2.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+          <img src="image/aployer3.jpg" class="w-10 h-10 rounded-full border-2 border-white object-cover">
+        </div>
+        <p class="text-slate-400 text-sm">
+          Over <span class="font-semibold">200years</span> of experience
+        </p>
+      </div>
+    </div>
+
+    <!-- RIGHT JOB CARDS -->
+    <div class="space-y-8">
+
+      <!-- FULL TIME -->
+      <div class="bg-white rounded-3xl p-6 shadow-xl grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <img src="image/aployer1.jpg" class="rounded-2xl object-cover">
+
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">
+            Remote Full-Time Position
+          </h3>
+
+          <span class="inline-block mb-4 px-4 py-2 bg-black text-white text-sm rounded-lg font-semibold">
+            Monthly200USD to 5000USD        
+          </span>
+
+          <p class="text-slate-700 mb-6">
+           Salary requirements are explained
+             For example, a permanent employee's salary
+              is $200 USD. Your monthly task is to recruit 5
+               Level 1 users, and you must have 20 active users. What does
+                "total active users" mean? It means that the total number of users
+                 from Levels 1, 2, and 3 must reach 20 to receive your monthly salary.
+                  [This applies to all employees at all levels.]
+          </p>
+
+          <a href="#apply"
+             class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-500 text-white font-semibold hover:bg-indigo-600 transition">
+            Apply now →
+          </a>
+        </div>
+      </div>
+
+      <!-- PART TIME -->
+      <div class="bg-white rounded-3xl p-6 shadow-xl grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <img src="image/aployer3.jpg" class="rounded-2xl object-cover">
+
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">
+            Remote Part-Time Position
+          </h3>
+
+          <span class="inline-block mb-4 px-4 py-2 bg-black text-white text-sm rounded-lg font-semibold">
+             Monthly200USD to 5000USD    
+          </span>
+
+          <p class="text-slate-700 mb-6">
+            Perfect for those looking for flexible working hours while working
+            from home with a manageable task load.
+          </p>
+
+          <a href="#apply"
+             class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-500 text-white font-semibold hover:bg-indigo-600 transition">
+            Apply now →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY WORK WITH US -->
+<section class="py-24 bg-slat900]">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- HEADER -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-slate-300 mb-4">
+        Why work with us?
+      </h2>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+        Discover why thousands choose our remote opportunities to build
+        flexible, reliable, and rewarding careers.
+      </p>
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+      <!-- CARD 1 -->
+      <div class="bg-white rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 text-white flex items-center justify-center mb-6 text-2xl">
+          🚀
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">
+          Flexible Online Roles
+        </h3>
+        <p class="text-slate-700 leading-relaxed">
+          Choose a work style that fits your schedule. Whether you prefer
+          fixed or flexible hours, we offer roles designed for balance and freedom.
+        </p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-white rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white flex items-center justify-center mb-6 text-2xl">
+          ⚡
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">
+          Simple & Fast Application
+        </h3>
+        <p class="text-slate-700 leading-relaxed">
+          No complicated steps. Apply online, follow a few instructions,
+          and get onboarded quickly with clear guidance from our team.
+        </p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-white rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-pink-500 text-white flex items-center justify-center mb-6 text-2xl">
+          💬
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 mb-3">
+          Reliable Support Team
+        </h3>
+        <p class="text-slate-700 leading-relaxed">
+          You’re never alone. Our support team is always available to assist
+          with tasks, questions, and ongoing guidance.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <a href="https://sldal.top/#/register"
+       target="_blank"
+        rel="noopener noreferrer"
+         class="inline-flex items-center gap-3 px-10 py-4 rounded-2xl bg-indigo-500 text-white font-semibold hover:bg-indigo-600 transition shadow-lg">
+        Apply now
+        <span class="text-xl">→</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-[#f9fbfd] rounded-3xl mt-24 mx-6 md:mx-12 px-8 py-12 text-slate-700">
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- LEFT -->
+    <div class="space-y-4">
+      <h4 class="text-orange-500 font-semibold">Position</h4>
+      <p>United Kingdom
+
+      <h4 class="text-orange-500 font-semibold mt-4">Email</h4>
+      <p class="text-slate-600">schroderstop@armyspy.com
+    </div>
+
+    <!-- CENTER -->
+    <div class="text-center md:text-left text-slate-600 leading-relaxed">
+      <p>
+        From first steps to future growth, we offer guidance,
+        resources, and partnerships designed to create success
+        for professionals and businesses alike.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="md:text-right space-y-2">
+      <h4 class="text-orange-500 font-semibold mb-3">Quick Links</h4>
+
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-orange-500 transition">Home page</a></li>
+        <li><a href="#" class="hover:text-orange-500 transition">Company Profile</a></li>
+        <li><a href="#" class="hover:text-orange-500 transition">Job Openings</a></li>
+        <li><a href="#" class="hover:text-orange-500 transition">Our Features</a></li>
+        <li><a href="#" class="hover:text-orange-500 transition">Inquiry</a></li>
+        <li><a href="#" class="hover:text-orange-500 transition">Customer testimonials</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="border-t border-slate-200 mt-10 pt-6 text-center text-sm text-slate-500">
+    © 2025 Schroders. All rights reserved.
+    <a href="#" class="hover:text-orange-500 transition">Privacy Policy</a>
+  </div>
+
+</footer>
+
+
+</body>
+</html>
